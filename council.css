@@ -1,0 +1,54 @@
+
+#council h4 {
+    font-size: 23px;
+}
+#council p {
+    font-size: 20px;
+}
+#council p .see_content {
+    font-size: 18px;
+}
+#council li {
+    font-size: 19px;
+}
+#council li .see_content {
+    font-size: 17px;
+}
+
+#council u, #council .see_button {
+    transition: color 0.3s;
+}
+#council p, #council li {
+    transition: transform 0.2s;
+}
+#council p:hover, #council li:hover {
+    transform: scale(1.005);
+}
+
+#council .see_content {
+    display: block;
+    margin-top: 8px;
+
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-8px) scaleY(0);
+    transform-origin: top;
+
+    overflow: hidden;
+
+    transition:
+        max-height 0.35s ease,
+        opacity 0.25s ease,
+        transform 0.35s ease;
+}
+
+#council .see_content.visible {
+    max-height: 200px;
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+}
+
+
+.see_button {
+    margin-left: 3px;
+}
