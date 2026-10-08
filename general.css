@@ -65,3 +65,17 @@ h2 {
     color: inherit;
     text-decoration: none;
 }
+
+footer span {
+    transition: font-size 0.15s;
+    font-weight: 100;
+    font-size: 14px;
+}
+footer span:hover {
+    font-size: 14.5px;
+    text-decoration: underline;
+}
+#notes {
+    margin-top: 100px;
+    font-weight: bold;
+}

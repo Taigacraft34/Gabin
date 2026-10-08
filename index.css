@@ -27,22 +27,3 @@
     font-size: 25px;
     margin: 0px;
 }
-
-
-#notes {
-    margin-top: 100px;
-}
-#notes h3 {
-    font-size: 17px;
-    text-decoration: underline;
-}
-#notes li {
-    font-size: 14px;
-    margin: 4px;
-    text-decoration: none;
-    transition: transform 0.2s;
-}
-#notes li:hover {
-    text-decoration: underline;
-    transform: scale(1.007);
-}
