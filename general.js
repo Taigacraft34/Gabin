@@ -9,7 +9,7 @@ orange.addEventListener("mouseenter", () => {
     
     orange.classList.add("wave");
 });
-
+ 
 setTimeout(() => {
     orange.classList.remove("wave");
     

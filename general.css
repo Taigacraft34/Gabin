@@ -44,7 +44,7 @@ h1 #white {
 #orange.wave::after {
     animation: wave 0.7s ease;
 }
-@keyframes wave {
+@keyframes wave { 
     from {
         left: -100%;
     }
