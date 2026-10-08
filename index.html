@@ -2,21 +2,27 @@
 <html>
     <head>
         <title>Gabin Suprême</title>
+        <link rel="stylesheet" href="general.css">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1><span id="white">Gabinou</span> <span id="orange">Suprême</span></h1>
-        <h3><i>Le site dédié à notre Leader bien aimé</i></h3>
+        <a href="index.html" class="unherit_a">
+            <div id="home_link">
+                <h1><span id="white">Gabinou</span> <span id="orange">Suprême</span></h1>
+                <h3><i>Le site dédié à notre Leader bien aimé</i></h3>
+            </div>
+        </a>
 
         <h2>Les rubriques</h2>
 
         <div id="main_grid">
+            <a class="unherit_a" href="titles.html">
+                <div class="item">
+                    <h4 class="item_title">Tous Ses titres</h4>
+                    <p>L'entièreté des titres de Gabin ; faites gaffe c'est long.</p>
+                </div>
+            </a>
             
-            <div class="item">
-                <h4 class="item_title">Tous Ses titres</h4>
-                <p>L'entièreté des titres de Gabin ; faites gaffe c'est long.</p>
-            </div>
-
             <div class="item">
                 <h4 class="item_title">Son Conseil</h4>
                 <p>Tous les membres actuels du Conseil et son actualité.</p>
@@ -28,7 +34,7 @@
             </div>
 
             <div class="item">
-                <h4 class="item_title">Ses meilleures photos</h4>
+                <h4 class="item_title">Ses photos</h4>
                 <p>Pour les collectes de stickers ou les posters dans votre chambre.</p>
             </div>
             
@@ -43,7 +49,18 @@
             </div>
         </div>
 
+        <div id="notes">
+            <h3>Les ptites notes de bas de page</h3>
+            <ul>
+                <li>Site : Alban</li>
+                <li>Tout le reste : Gabin</li>
+                <li>Politique de revente de données</li>
+                <li>Cookies non-refusables</li>
+                <li>Contacter le Seigneur</li>
+            </ul>
+        </div>
 
         <script src="index.js"></script>
+        <script src="general.js"></script>
     </body>
 </html>
