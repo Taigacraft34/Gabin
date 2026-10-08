@@ -1,55 +1,104 @@
-
-#council h4 {
-    font-size: 23px;
-}
-#council p {
-    font-size: 20px;
-}
-#council p .see_content {
-    font-size: 18px;
-}
-#council li {
-    font-size: 19px;
-}
-#council li .see_content {
-    font-size: 17px;
-    margin-bottom: 10px;
+#council {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
-#council u, #council .see_button {
-    transition: color 0.3s;
-}
-#council p, #council li {
-    transition: transform 0.2s;
-}
-#council p:hover, #council li:hover {
-    transform: scale(1.005);
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-#council .see_content {
-    display: block;
-    margin-top: 8px;
+/* Sections */
 
-    max-height: 0;
-    opacity: 0;
-    transform: translateY(-8px) scaleY(0);
-    transform-origin: top;
-
-    overflow: hidden;
-
-    transition:
-        max-height 0.35s ease,
-        opacity 0.25s ease,
-        transform 0.35s ease;
+.rank {
+    margin-bottom: 40px;
 }
 
-#council .see_content.visible {
-    max-height: 200px;
-    opacity: 1;
-    transform: translateY(0) scaleY(1);
+.rank_title {
+    margin: 0 0 18px;
+    padding-bottom: 6px;
+    font-size: 1.2em;
+}
+
+.pill-badge {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+
+  /*rounded-pill*/
+  border-radius: 50rem;
+
+  /*px-3 py-2*/
+  padding: 0.5rem 1rem;
+
+  /* fs-6*/
+  font-size: 1rem;
+  
+  background-color: #0d6efd;
+  color: #fff;
 }
 
 
-.see_button {
-    margin-left: 3px;
+/* Cartes */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card {
+    box-sizing: border-box;
+    flex: 0 1 300px;
+    padding: 16px 18px;
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 8px;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    border-color: #ff8c1a;
+}
+
+.role {
+    margin: 0 0 4px;
+    font-size: 0.85em;
+    font-style: italic;
+    color: #ff8c1a;
+}
+
+.card h5 {
+    margin: 0 0 6px;
+    font-size: 1.25em;
+}
+
+.tags {
+    margin: 0 0 8px;
+    font-size: 0.85em;
+    opacity: 0.75;
+}
+
+.desc {
+    margin: 0;
+    line-height: 1.45;
+}
+
+.card_leader {
+    border: 2px solid #ff8c1a;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .card {
+        flex-basis: 100%;
+    }
 }
